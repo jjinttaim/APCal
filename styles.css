@@ -1,0 +1,229 @@
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+  --accent: #0ea5e9;
+  --border: #e5e7eb;
+  --good: #16a34a;
+  --bad: #dc2626;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+  color: #fff;
+  padding: 56px 0 44px;
+  box-shadow: var(--shadow);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+}
+.site-header h1 span {
+  font-weight: 400;
+  opacity: 0.9;
+  display: inline-block;
+  margin-left: 8px;
+}
+.site-header .tagline {
+  margin: 10px 0 0;
+  opacity: 0.92;
+  font-size: 1.05rem;
+}
+
+.topnav {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.topnav .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.topnav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  transition: background 0.15s, color 0.15s;
+}
+.topnav a:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+main.wrap { padding-top: 28px; padding-bottom: 60px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 28px 22px;
+  margin: 20px 0;
+  box-shadow: var(--shadow);
+  scroll-margin-top: 70px;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--brand-dark);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  color: #111827;
+  margin-top: 22px;
+}
+
+h4 { margin: 0 0 6px; }
+
+ul, ol { padding-left: 22px; }
+li { margin: 4px 0; }
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+.grid.two { grid-template-columns: repeat(2, 1fr); }
+.grid.three { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 720px) {
+  .grid.two, .grid.three { grid-template-columns: 1fr; }
+}
+
+.example {
+  background: #eff6ff;
+  border-left: 4px solid var(--brand);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 14px 0;
+}
+
+.formula-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 14px;
+  font-size: 0.98rem;
+}
+.formula-table th,
+.formula-table td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+.formula-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+.formula-table tr:nth-child(even) td { background: #fafafa; }
+
+.muted { color: var(--muted); font-size: 0.95rem; }
+
+/* Quiz */
+.quiz-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 12px 0;
+  background: #fafbfc;
+}
+.quiz-question {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.quiz-options {
+  display: grid;
+  gap: 8px;
+}
+.quiz-option {
+  text-align: left;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: background 0.15s, border-color 0.15s;
+}
+.quiz-option:hover:not(:disabled) {
+  background: #eff6ff;
+  border-color: var(--brand);
+}
+.quiz-option.correct {
+  background: #dcfce7;
+  border-color: var(--good);
+  color: #065f46;
+}
+.quiz-option.wrong {
+  background: #fee2e2;
+  border-color: var(--bad);
+  color: #7f1d1d;
+}
+.quiz-option:disabled { cursor: default; }
+.quiz-explain {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  font-size: 0.96rem;
+  color: #374151;
+}
+
+.quiz-footer {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+#reset-quiz {
+  background: var(--brand);
+  color: #fff;
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+#reset-quiz:hover { background: var(--brand-dark); }
+#score { font-weight: 600; color: var(--brand-dark); }
+
+.site-footer {
+  padding: 24px 0 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
