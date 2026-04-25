@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AP Calculus BC · 16일 학습 플랜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="plan.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+  integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+  integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+  onload="renderMathInElement(document.body, { delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}] });"
+></script>
+</head>
+<body>
+
+<header class="site-header plan-header">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+    <span class="grid-overlay"></span>
+  </div>
+  <div class="wrap hero-wrap">
+    <span class="hero-badge">AP Calculus BC · 시험 대비</span>
+    <h1>D-<span id="dday-num">16</span> <span>16일 완성 플랜</span></h1>
+    <p class="tagline">
+      남은 시간에 가장 큰 점수를 만드는 우선순위와 하루 단위 액션 플랜.
+    </p>
+    <div class="hero-cta">
+      <a href="#priorities" class="btn btn-primary">우선순위 먼저 보기</a>
+      <a href="#schedule" class="btn btn-ghost">하루별 계획</a>
+    </div>
+    <div class="progress-shell">
+      <div class="progress-label">
+        <span>전체 진행도</span>
+        <span id="progress-text">0 / 0</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html">← 메인</a>
+    <a href="#priorities">우선순위</a>
+    <a href="#schedule">16일 계획</a>
+    <a href="#must-know">필수 공식</a>
+    <a href="#frq">FRQ 빈출</a>
+    <a href="#dday">시험 전날</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="priorities" class="card">
+  <h2>먼저 알아야 할 것: BC 시험 비중</h2>
+  <p>
+    BC는 AB의 모든 단원 + BC 전용 단원입니다. 같은 시간을 투자해도
+    <strong>비중 큰 단원</strong>을 먼저 잡아야 점수가 빠르게 오릅니다.
+  </p>
+
+  <div class="weight-list">
+    <div class="weight-row top">
+      <div class="w-name">Unit 6: 적분 & FTC</div>
+      <div class="w-bar"><div style="width: 19%"></div></div>
+      <div class="w-pct">17–20%</div>
+    </div>
+    <div class="weight-row top">
+      <div class="w-name">Unit 10: 무한급수 (BC 전용)</div>
+      <div class="w-bar"><div style="width: 18%"></div></div>
+      <div class="w-pct">17–18%</div>
+    </div>
+    <div class="weight-row top">
+      <div class="w-name">Unit 9: 매개·극·벡터 (BC 전용)</div>
+      <div class="w-bar"><div style="width: 12%"></div></div>
+      <div class="w-pct">11–12%</div>
+    </div>
+    <div class="weight-row">
+      <div class="w-name">Unit 3–4: 미분 응용 (해석)</div>
+      <div class="w-bar"><div style="width: 11%"></div></div>
+      <div class="w-pct">8–11%</div>
+    </div>
+    <div class="weight-row">
+      <div class="w-name">Unit 5: 미분 응용 (분석)</div>
+      <div class="w-bar"><div style="width: 9%"></div></div>
+      <div class="w-pct">6–9%</div>
+    </div>
+    <div class="weight-row">
+      <div class="w-name">Unit 7: 미분방정식</div>
+      <div class="w-bar"><div style="width: 9%"></div></div>
+      <div class="w-pct">6–9%</div>
+    </div>
+    <div class="weight-row">
+      <div class="w-name">Unit 8: 적분의 응용</div>
+      <div class="w-bar"><div style="width: 9%"></div></div>
+      <div class="w-pct">6–9%</div>
+    </div>
+    <div class="weight-row">
+      <div class="w-name">Unit 1–2: 극한·미분 기본</div>
+      <div class="w-bar"><div style="width: 7%"></div></div>
+      <div class="w-pct">4–7%</div>
+    </div>
+  </div>
+
+  <h3>이 16일 동안 가장 우선해야 할 5가지</h3>
+  <ol class="priority-list">
+    <li>
+      <strong>Taylor / Maclaurin 급수</strong> — 매년 FRQ에 1문제 고정.
+      자주 쓰는 5개($e^x, \sin x, \cos x, \frac{1}{1-x}, \ln(1+x)$)는
+      반드시 암기.
+    </li>
+    <li>
+      <strong>수렴 판정법</strong> — n-th term, 비율, p-급수, 적분, 비교,
+      교대급수, 절대수렴. 어느 상황에 어느 판정법인지 흐름도로 정리.
+    </li>
+    <li>
+      <strong>적분 기법</strong> — u-치환은 필수, 부분적분(BC),
+      부분분수(BC), 삼각치환(가끔), 그리고 <em>improper integrals</em>.
+    </li>
+    <li>
+      <strong>매개·극 좌표</strong> — $\frac{dy}{dx}=\frac{dy/dt}{dx/dt}$,
+      극좌표 면적 $\tfrac{1}{2}\int r^2\,d\theta$, 호의 길이 공식.
+    </li>
+    <li>
+      <strong>미분방정식</strong> — 변수분리, slope field, Euler's method,
+      logistic $\frac{dP}{dt}=kP(1-P/L)$ 형태.
+    </li>
+  </ol>
+
+  <div class="callout">
+    <strong>💡 시간 분배 가이드:</strong>
+    하루 3–4시간이라면 → 개념 90분 + 문제풀이 90분 + 오답·암기 30분.
+    개념만 보다 시험 가는 게 가장 위험합니다. <strong>매일 문제 풀기 필수.</strong>
+  </div>
+</section>
+
+<section id="schedule" class="card">
+  <h2>16일 학습 계획</h2>
+  <p class="muted">
+    체크박스는 브라우저에 자동 저장됩니다. 각 날의 목표를 끝낼 때마다 체크하세요.
+  </p>
+
+  <div class="phase-tag phase-1">Phase 1 · Days 1–4 · 미분 복습</div>
+  <div id="day-grid-1" class="day-grid"></div>
+
+  <div class="phase-tag phase-2">Phase 2 · Days 5–8 · 적분 & 응용</div>
+  <div id="day-grid-2" class="day-grid"></div>
+
+  <div class="phase-tag phase-3">Phase 3 · Days 9–12 · BC 핵심 (DE & Series)</div>
+  <div id="day-grid-3" class="day-grid"></div>
+
+  <div class="phase-tag phase-4">Phase 4 · Days 13–16 · 실전 & 마무리</div>
+  <div id="day-grid-4" class="day-grid"></div>
+
+  <div class="quiz-footer">
+    <button id="reset-plan">진행도 초기화</button>
+    <span class="muted">진행도는 이 기기의 브라우저에만 저장됩니다.</span>
+  </div>
+</section>
+
+<section id="must-know" class="card">
+  <h2>외우지 않으면 시간 부족 — 필수 공식</h2>
+
+  <h3>도함수 (즉답 가능해야 함)</h3>
+  <table class="formula-table">
+    <tbody>
+      <tr><td>$\frac{d}{dx}\tan x$</td><td>$\sec^2 x$</td></tr>
+      <tr><td>$\frac{d}{dx}\sec x$</td><td>$\sec x \tan x$</td></tr>
+      <tr><td>$\frac{d}{dx}\cot x$</td><td>$-\csc^2 x$</td></tr>
+      <tr><td>$\frac{d}{dx}\csc x$</td><td>$-\csc x \cot x$</td></tr>
+      <tr><td>$\frac{d}{dx}\arcsin x$</td><td>$\dfrac{1}{\sqrt{1-x^2}}$</td></tr>
+      <tr><td>$\frac{d}{dx}\arctan x$</td><td>$\dfrac{1}{1+x^2}$</td></tr>
+      <tr><td>$\frac{d}{dx}a^x$</td><td>$a^x \ln a$</td></tr>
+      <tr><td>$\frac{d}{dx}\log_a x$</td><td>$\dfrac{1}{x\ln a}$</td></tr>
+    </tbody>
+  </table>
+
+  <h3>BC 전용 공식</h3>
+  <ul>
+    <li>매개변수 도함수: $\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt}$, $\dfrac{d^2y}{dx^2}=\dfrac{d(dy/dx)/dt}{dx/dt}$</li>
+    <li>매개변수 호의 길이: $L=\int_a^b \sqrt{(x'(t))^2+(y'(t))^2}\,dt$</li>
+    <li>극좌표 면적: $A=\dfrac{1}{2}\int_\alpha^\beta r^2\,d\theta$</li>
+    <li>극→직교: $x=r\cos\theta,\ y=r\sin\theta$, $\tan\theta=y/x$</li>
+    <li>Euler's method: $y_{n+1}=y_n + h\cdot f(x_n,y_n)$</li>
+    <li>Logistic: $\dfrac{dP}{dt}=kP\!\left(1-\dfrac{P}{L}\right)$, 변곡점은 $P=L/2$</li>
+    <li>비율 판정법: $L=\lim\left|\dfrac{a_{n+1}}{a_n}\right|$, $L<1$ 수렴, $L>1$ 발산, $L=1$ 미정</li>
+    <li>Taylor 오차(라그랑주): $|R_n(x)|\le \dfrac{M}{(n+1)!}|x-a|^{n+1}$</li>
+  </ul>
+
+  <h3>꼭 외워야 할 Maclaurin 급수</h3>
+  <ul>
+    <li>$e^x = \sum_{n=0}^\infty \dfrac{x^n}{n!}$ (모든 $x$)</li>
+    <li>$\sin x = \sum_{n=0}^\infty \dfrac{(-1)^n x^{2n+1}}{(2n+1)!}$ (모든 $x$)</li>
+    <li>$\cos x = \sum_{n=0}^\infty \dfrac{(-1)^n x^{2n}}{(2n)!}$ (모든 $x$)</li>
+    <li>$\dfrac{1}{1-x} = \sum_{n=0}^\infty x^n$ ($|x|<1$)</li>
+    <li>$\ln(1+x) = \sum_{n=1}^\infty \dfrac{(-1)^{n+1} x^n}{n}$ ($-1<x\le 1$)</li>
+    <li>$\arctan x = \sum_{n=0}^\infty \dfrac{(-1)^n x^{2n+1}}{2n+1}$ ($|x|\le 1$)</li>
+  </ul>
+</section>
+
+<section id="frq" class="card">
+  <h2>FRQ 빈출 6가지 — 이건 무조건 풀어보고 가자</h2>
+  <p>
+    BC FRQ는 매년 거의 같은 6개 유형이 반복됩니다. 각 유형을 최소 2년치
+    풀어보세요 (College Board 공개 문제 무료).
+  </p>
+  <ol class="frq-list">
+    <li>
+      <strong>변화율 (Rate-in / Rate-out):</strong>
+      두 함수가 들어오고 나가는 비율 → 누적량은 적분, 변화율은 차이.
+      "increasing fastest" → $f'=0$ where derivative changes sign.
+    </li>
+    <li>
+      <strong>그래프 해석:</strong> $f'$의 그래프가 주어지고 $f$의 극값,
+      변곡점, 절대극값을 묻는다. <em>FTC로 $f(b)=f(a)+\int_a^b f'$</em>.
+    </li>
+    <li>
+      <strong>입자 운동 / 매개변수 (BC):</strong>
+      속도 벡터 $(x'(t), y'(t))$, 속력 $\sqrt{x'^2+y'^2}$,
+      이동 거리 = 속력의 적분.
+    </li>
+    <li>
+      <strong>면적·부피:</strong> 두 곡선 사이 면적, 회전체(원판/원통),
+      cross-section(정사각형/반원/정삼각형).
+    </li>
+    <li>
+      <strong>미분방정식:</strong> slope field 그리기 → 변수분리로 해 구하기
+      → 초기조건 적용. BC는 logistic 또는 Euler's method가 자주 나옴.
+    </li>
+    <li>
+      <strong>Taylor 급수 (BC):</strong> 처음 4개 항 적기 →
+      일반항 → 수렴 반경/구간 → 라그랑주 오차 한계.
+    </li>
+  </ol>
+  <div class="callout warn">
+    <strong>⏱ 시간 페이스:</strong> FRQ 6문제 / 90분 = 문제당 15분.
+    Part A (계산기 가능, 2문제) 30분, Part B (계산기 ×, 4문제) 60분.
+    <strong>풀이 과정을 반드시 적기</strong> — 답만 적으면 부분점수 못 받습니다.
+  </div>
+</section>
+
+<section id="dday" class="card">
+  <h2>시험 전날 & 당일 체크리스트</h2>
+
+  <h3>시험 전날 (Day 16)</h3>
+  <ul>
+    <li>새로운 문제 풀지 말기. <strong>이미 푼 문제 중 틀린 것</strong>만 다시 보기.</li>
+    <li>Maclaurin 급수 5개, 도함수·적분 기본표 한 번씩 손으로 적어보기.</li>
+    <li>준비물: <strong>그래핑 계산기 + 여분 배터리</strong>, HB 연필 2자루,
+        지우개, 시계(소리 없는 것), 신분증, 수험표.</li>
+    <li>계산기 메모리·프로그램 OK (College Board 공식 정책). 단,
+        통신 가능 기기 ✕</li>
+    <li>최소 7시간 이상 수면. 카페인 ↓.</li>
+  </ul>
+
+  <h3>시험 당일 전략</h3>
+  <ul>
+    <li><strong>MCQ Part A (계산기 ×, 30문제 / 60분)</strong> — 2분/문항. 막히면 표시하고 패스.</li>
+    <li><strong>MCQ Part B (계산기 ○, 15문제 / 45분)</strong> — 3분/문항. 적분·근 찾기는 계산기로.</li>
+    <li><strong>FRQ Part A (계산기 ○, 2문제 / 30분)</strong> — 부분점수 노리고 모든 단계 적기.</li>
+    <li><strong>FRQ Part B (계산기 ×, 4문제 / 60분)</strong> — 급수·증명류가 여기 자주.</li>
+    <li>모르는 문제도 <strong>변수 정의 / 적분 식 세우기</strong>까지는 적자. 1–2점은 따낸다.</li>
+  </ul>
+
+  <div class="callout success">
+    <strong>🎯 5점을 위한 최종 점검:</strong>
+    BC는 약 <strong>60–65% 정답률</strong>이면 5점입니다. 모든 문제를
+    완벽히 풀 필요 없음 — <strong>아는 것에서 실수 0</strong>이 목표.
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© AP Calculus 16일 플랜 · <a href="index.html">메인 페이지로</a></p>
+  </div>
+</footer>
+
+<script src="plan.js"></script>
+</body>
+</html>
