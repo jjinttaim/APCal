@@ -255,6 +255,16 @@ html, body {
   color: #fff;
   transform: translateY(-1px);
 }
+.topnav a.nav-cta {
+  background: linear-gradient(135deg, #ec4899, #f59e0b);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 6px 14px -6px rgba(236, 72, 153, 0.6);
+}
+.topnav a.nav-cta:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
 
 /* ====== Main & Cards ====== */
 main.wrap { padding-top: 32px; padding-bottom: 72px; }
